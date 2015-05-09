@@ -2,12 +2,12 @@ package entities;
 
 public class HabitType extends Entity {
 
-
 	public HabitType(int id, String type, String languauge) {
 		super(id);
 		this.type = type;
 		this.languauge = languauge;
 	}
+
 	private String type;
 	private String languauge;
 
@@ -26,9 +26,11 @@ public class HabitType extends Entity {
 	public void setLanguauge(String languauge) {
 		this.languauge = languauge;
 	}
+
 	@Override
 	public String toString() {
 
-		return "HabitType [ type: "+getType()+", languauge:"+getLanguauge()+" ]";
+		return "\nHabitType [ id=" + getId() + ", type: " + getType()
+				+ ", languauge:" + getLanguauge() + " ]";
 	}
 }
